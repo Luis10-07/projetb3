@@ -2,7 +2,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  min-height: 100%;
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
 }
@@ -28,10 +28,9 @@ body {
   align-items: center;
 }
 
-.sidebar h2 {
-  margin-bottom: 20px;
+.sidebar h2 { 
+  margin-bottom: 20px; 
 }
-
 .sidebar a {
   color: white;
   text-decoration: none;
@@ -39,12 +38,33 @@ body {
   width: 100%;
   text-align: center;
   margin-bottom: 5px;
-  transition: 0.3s;
+  transition: background-color 0.3s;
+}
+.sidebar a:hover { 
+  background-color: #555; 
 }
 
-.sidebar a:hover {
-  background-color: #555;
+.sidebar-footer {
+  margin-top: auto;  /* pousse les liens en bas de la sidebar */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 20px;
 }
+
+.sidebar-footer a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 0;
+  text-align: center;
+  transition: color 0.3s;
+  font-size: 14px;
+}
+
+.sidebar-footer a:hover {
+  color: #00acee;  /* couleur bleu clair au survol, tu peux changer */
+}
+
 
 /* Header */
 .header {
@@ -91,11 +111,11 @@ body {
   border: 2px solid #333;
 }
 
-.about-text {
-  max-width: 500px;
+.about-text { 
+  max-width: 500px; 
 }
 
-/* Compétences simples responsive */
+/* Compétences */
 .info-boxes {
   display: flex;
   flex-wrap: wrap;
@@ -105,7 +125,7 @@ body {
 }
 
 .box {
-  flex: 1 1 150px; /* largeur minimum flexible */
+  flex: 1 1 150px;
   max-width: 150px;
   height: 150px;
   background-color: #333;
@@ -118,8 +138,8 @@ body {
   text-align: center;
 }
 
-.box:hover {
-  transform: scale(1.05);
+.box:hover { 
+  transform: scale(1.05); 
 }
 
 /* Expériences */
@@ -141,18 +161,48 @@ body {
 
 .project-card {
   width: 200px;
-  height: 150px;
+  height: auto;
   background-color: #333;
   color: white;
   border-radius: 10px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  transition: 0.3s;
+  overflow: hidden;
+  transition: transform 0.3s;
+  text-align: center;
+  padding: 10px;
 }
 
-.project-card:hover {
-  transform: scale(1.05);
+.project-card span {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.project-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.project-card p {
+  margin: 3px 0;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.project-card .project-tech {
+  font-size: 12px;
+  font-style: italic;
+  color: #aaa;
+}
+
+.project-card:hover { 
+  transform: scale(1.05); 
 }
 
 /* Contact */
@@ -192,8 +242,8 @@ body {
   transition: 0.3s;
 }
 
-.contact-form button:hover {
-  background-color: #555;
+.contact-form button:hover { 
+  background-color: #555; 
 }
 
 /* Footer */
@@ -206,15 +256,7 @@ footer {
 
 /* Responsive simple */
 @media (max-width: 768px) {
-  .sidebar {
-    width: 150px;
-  }
-
-  .header, .main {
-    margin-left: 150px;
-  }
-
-  .about-container {
-    flex-direction: column;
-  }
+  .sidebar { width: 150px; }
+  .header, .main { margin-left: 150px; }
+  .about-container { flex-direction: column; }
 }
