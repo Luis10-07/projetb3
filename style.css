@@ -266,3 +266,38 @@ footer {
   }
   .header, .main { margin-left: 0; }
 }
+/* Langages */
+.languages-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.language-card {
+  background: #333;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+}
+
+.progress {
+  background: #555;
+  border-radius: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  line-height: 20px;
+  padding-right: 10px;
+  text-align: right;
+  font-size: 12px;
+  border-radius: 20px;
+}
+
+.progress-bar.html { width: 90%; background: #e34c26; }
+.progress-bar.css  { width: 85%; background: #264de4; }
+.progress-bar.js   { width: 70%; background: #f0db4f; color: #000; }
+.progress-bar.php  { width: 65%; background: #777bb3; }

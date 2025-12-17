@@ -16,6 +16,7 @@
     <a href="#accueil">🏠 Accueil</a>
     <a href="#about">👤 À propos</a>
     <a href="#skills">💡 Compétences</a>
+    <a href="#languages">🧠 Langages</a>
     <a href="#experience">📋 Expériences</a>
     <a href="#projects">📂 Projets</a>
     <a href="#contact">📞 Contact</a>
@@ -32,17 +33,17 @@
     <h1>LUIS CARLOS PAZMIÑO SUÁREZ</h1>
   </header>
 
-  <!-- Main content -->
+  <!-- Main -->
   <main class="main">
 
     <!-- Accueil -->
-    <section id="accueil" class="section accueil">
+    <section id="accueil" class="section">
       <h2>Bienvenue sur mon portfolio</h2>
       <p>Découvrez mon profil professionnel, mes projets et mes compétences.</p>
     </section>
 
     <!-- À propos -->
-    <section id="about" class="section about">
+    <section id="about" class="section">
       <div class="about-container">
         <div class="about-image">
           <img src="img/1.JPG" alt="Photo de profil">
@@ -50,15 +51,15 @@
         <div class="about-text">
           <h2>À propos de moi</h2>
           <p>
-            Je suis Luis Carlos Pazmiño Suárez, passionné par le développement web et la création de projets modernes.
-            J’aime apprendre, expérimenter et partager mes idées à travers des applications simples et efficaces.
+            Je suis Luis Carlos Pazmiño Suárez, passionné par le développement web.
+            J’aime apprendre, expérimenter et créer des projets modernes et efficaces.
           </p>
         </div>
       </div>
     </section>
 
     <!-- Compétences -->
-    <section id="skills" class="section skills">
+    <section id="skills" class="section">
       <h2>Compétences</h2>
       <div class="info-boxes">
         <div class="box">💻 Développement</div>
@@ -68,45 +69,72 @@
       </div>
     </section>
 
+    <!-- Langages -->
+    <section id="languages" class="section">
+      <h2>Langages de programmation</h2>
+
+      <div class="languages-container">
+        <div class="language-card">
+          <h3>HTML</h3>
+          <div class="progress"><div class="progress-bar html">90%</div></div>
+        </div>
+
+        <div class="language-card">
+          <h3>CSS</h3>
+          <div class="progress"><div class="progress-bar css">85%</div></div>
+        </div>
+
+        <div class="language-card">
+          <h3>JavaScript</h3>
+          <div class="progress"><div class="progress-bar js">60%</div></div>
+        </div>
+
+        <div class="language-card">
+          <h3>PHP</h3>
+          <div class="progress"><div class="progress-bar php">55%</div></div>
+        </div>
+      </div>
+    </section>
+
     <!-- Expériences -->
-    <section id="experience" class="section experience">
+    <section id="experience" class="section">
       <h2>Expériences</h2>
       <div class="experience-item">
-        <h3>Creation des projets B1 </h3>
-        <span>Fevrier 2023</span>
-        <p>Création et maintenance de sites web pour divers clients.</p>
+        <h3>Création des projets B1</h3>
+        <span>Février 2023</span>
+        <p>Création et développement de projets scolaires.</p>
       </div>
       <div class="experience-item">
-        <h3>PHP et JavaScript B2</h3>
-        <span>Octobre  - Décembre 2024</span>
-        <p>Creation des basses de donnes et pages fonctionelles avec les differentes logiciels</p>
+        <h3>PHP & JavaScript B2</h3>
+        <span>Octobre - Décembre 2024</span>
+        <p>Développement back-end et pages dynamiques.</p>
       </div>
     </section>
 
     <!-- Projets -->
-    <section id="projects" class="section projects">
+    <section id="projects" class="section">
       <h2>Projets</h2>
       <div class="projects-container">
 
         <div class="project-card">
-          <span>Location des voitures</span>
-          <img src="img/2.jpg" alt="Projet location de voitures">
-          <p class="project-desc">Site de location de voitures avec gestion des réservations.</p>
-          <p class="project-tech">Technologies : HTML, CSS, JavaScript</p>
+          <span>Location de voitures</span>
+          <img src="img/2.jpg">
+          <p>Site avec gestion des réservations</p>
+          <p class="project-tech">HTML, CSS, JS</p>
         </div>
 
         <div class="project-card">
           <span>Boutique de vêtements</span>
-          <img src="img/3.jpg" alt="Projet boutique de vêtements">
-          <p class="project-desc">E-commerce pour vêtements avec panier et paiement en ligne.</p>
-          <p class="project-tech">Technologies : HTML, CSS, PHP, MySQL</p>
+          <img src="img/3.jpg">
+          <p>E-commerce avec panier</p>
+          <p class="project-tech">HTML, CSS, PHP, MySQL</p>
         </div>
 
         <div class="project-card">
           <span>Agence de voyages</span>
-          <img src="img/4.jpg" alt="Projet agence de voyages">
-          <p class="project-desc">Plateforme pour réserver des voyages et hôtels facilement.</p>
-          <p class="project-tech">Technologies : HTML, CSS, JavaScript</p>
+          <img src="img/4.jpg">
+          <p>Plateforme de réservation</p>
+          <p class="project-tech">HTML, CSS, JS</p>
         </div>
 
       </div>
@@ -115,12 +143,7 @@
     <!-- Contact -->
     <section id="contact" class="section contact-section">
       <h2>Contactez-moi</h2>
-
-      <form
-        class="contact-form"
-        action="https://formspree.io/f/mrbnwgkz"
-        method="POST"
-      >
+      <form class="contact-form" action="https://formspree.io/f/mrbnwgkz" method="POST">
         <input type="text" name="name" placeholder="Votre nom" required>
         <input type="email" name="email" placeholder="Votre email" required>
         <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
@@ -130,12 +153,10 @@
 
   </main>
 
-  <!-- Footer -->
   <footer>
     <p>© 2025 Luis Carlos Pazmiño Suárez</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
-
 </html>
